@@ -1,0 +1,62 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar color='dark'>
+      <ion-buttons slot="start">
+        <ion-menu-button autoHide="false"></ion-menu-button>
+      </ion-buttons>
+      <ion-title color ="danger">Registro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content >
+  
+    <form [formGroup]='formularioRegistro'>
+  
+      </form>
+  
+      <ion-card>
+      
+        <ion-card-content>
+          
+          <ion-item>
+            <ion-Label position="floating">
+               Usuario
+            </ion-Label>
+            <ion-input formControlName='Nombre'></ion-input>
+           </ion-item>
+     
+           <ion-item>
+             <ion-Label position="floating">
+                Contrasena
+             </ion-Label>
+             <ion-input formControlName='Password' type='Password'></ion-input>
+           </ion-item>
+           <ion-item>
+            <ion-Label position="floating">
+               Confirmar Contrasena
+            </ion-Label>
+            <ion-input formControlName='ConfirmacionPass' type='Password'></ion-input>
+          </ion-item>
+
+           <br>
+           <ion-button (click)='Guardar()' color="danger">
+             Registrarse
+           </ion-button>
+           <ion-button (click)='Limpiar()' color="danger">
+            Limpiar
+          </ion-button>
+  
+        </ion-card-content>
+      </ion-card>
+  </ion-content>
+  
+  <ion-footer>
+  
+    <ion-toolbar color='dark'>
+  
+     
+
+    </ion-toolbar>
+  
+  </ion-footer>
+  </ion-app>

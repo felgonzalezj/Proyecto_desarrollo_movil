@@ -1,7 +1,11 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
+  <ion-toolbar color="dark">
+    
+  <ion-buttons slot="start">
+    <ion-menu-button autoHide="false"></ion-menu-button>
+  </ion-buttons>
+    <ion-title color ="danger">
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +13,41 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Home</ion-title>
     </ion-toolbar>
+
+
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>"aqui va el slogan"</ion-card-subtitle>
+      <ion-card-title>"aqui va el nombre de la tienda"</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      (aqui va una descripcion de la tienda ocupando mas espacio)
+      <br>
+      <br>
+      <br>
+      (ejemplo de la descripcion)
+      <br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolor qui mollitia alias totam doloribus! Vel, officia similique maiores deserunt, modi aliquam quibusdam totam tenetur repellendus inventore repellat nulla explicabo!
+    </ion-card-content>
+  </ion-card>
+  <br>
+
+
+ 
 </ion-content>
+
+
+<ion-footer>
+  
+  <ion-toolbar color='dark'>
+
+   
+
+  </ion-toolbar>
+
+</ion-footer>
